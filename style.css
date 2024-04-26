@@ -1,0 +1,550 @@
+
+/*all content*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  text-decoration: none;
+}
+
+/*Navigasi*/
+
+.navigasi {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: #336633;
+  z-index: 10;
+  
+  
+}
+
+.navigasi img{
+  width: 80px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  
+}
+
+.navigasi ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+.navigasi ul li a:hover{
+  color: #669933;
+  transition: 0.5s
+}
+
+
+.navigasi ul li a{
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.btn{
+  
+  background-color: white;
+  color: black;
+  border:2px solid white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 30px;
+
+}
+
+.btn:hover{
+  border :1px solid white;
+  color: white;
+  background-color: transparent;
+  
+  
+}
+/* CSS lainnya */
+.navigasi .hamburger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navigasi .hamburger span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.navigasi .hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.navigasi .hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigasi .hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
+/* Responsif */
+@media only screen and (max-width: 480px) {
+  .navigasi ul {
+    display: none;
+  }
+
+  .navigasi .btn {
+    display: none;
+  }
+
+  .navigasi .hamburger {
+    display: block;
+  }
+
+  .navigasi.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #336633;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .navigasi.active ul li {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+/*Halaman Beranda*/
+
+.box-home {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url(img/baraga.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.box-home h1 {
+    font-size: 70px;
+    margin-top: 200px;
+}
+.box-home h2 {
+    font-size: 50px;
+    margin-top: 80px;
+    line-height: 50px;
+}
+.box-home p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: -1px;
+
+
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px ;
+    font-weight: bold;
+  background-color: #33cc33;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover{
+  color: #33cc33;
+  background-color: white;
+}
+
+.box-content{
+  align-items: center;
+}
+.box-content h1{
+  margin-top: 30px;
+}
+
+hr{
+  
+  margin-top: 2px;
+  width: 450px;
+  border-top: 2px dotted black
+
+}
+
+/*Halaman Info tanda kamu butuh healing*/
+
+.list {
+  display: block;
+  height: 100px;
+  float: right;
+  background-color: #336633;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 3%;
+  margin-right: 70px;
+}
+
+.list .list-title{
+  height: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+.list .list-description{
+  padding: 5px;
+  color: white
+}
+
+/*Hal Info about beling*/
+.box-about{
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: #cccc99;
+}
+
+.box-about h1{
+  color: #006633;
+  margin-left: 400px;
+  font-size: 40px;
+}
+
+.box-about img{
+  width: 300px;
+}
+
+.box-about p{
+  font-size: 20px;
+  color: #000066;
+  margin-left: 100px;
+}
+/* CSS lainnya */
+
+/* Responsif */
+@media only screen and (max-width: 767px) {
+  .list {
+    width: 90%;
+    margin: 3% auto;
+  }
+
+  .list p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 480px) {
+  .list {
+    width: 80%;
+    float: none;
+    margin: 3%;
+    margin-right: 0;
+  }
+
+  .list p {
+    font-size: 14px;
+  }
+}
+
+/*Halaman Konten paket*/
+.paket-bg{
+  background-color: #cccc99;
+
+}
+
+.paket-bg h1{
+  color: white;
+  font-size: 50px;
+
+}
+
+.paket-bg h3{
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+div.paket {
+
+    margin: 40px 100px ;
+    float: left;
+    width: 120px;
+    transition: 1s
+}
+
+div.paket:hover {
+    transform: scale(1.5);
+}
+
+div.paket img {
+    width: 100%;
+    height: auto;
+}
+
+
+.paket-content{
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Responsif */
+@media only screen and (max-width: 767px) {
+  .paket {
+    margin: 30px;
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 480px) {
+  .paket {
+    margin: 20px;
+    width: 100%;
+    float: none;
+  }
+}
+
+/*Pilihan konten paket*/
+/* style.css */
+.pilihanpaket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pilihanpaket h1 {
+  text-align: center;
+}
+
+.pilihanpaket img {
+  margin-bottom: 20px;
+}
+
+.pilihanpaket p {
+  text-align: center;
+}
+
+.pilihanpaket button {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #336633;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+/* CSS lainnya */
+
+
+
+
+
+/*Halaman konten galeri */
+.galeri-content{
+  margin-top: 20px;
+}
+div.gallery {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/* CSS lainnya */
+
+/* Responsif */
+@media only screen and (max-width: 767px) {
+  div.gallery {
+    margin: 10px;
+    width: calc(50% - 20px);
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 480px) {
+  div.gallery {
+    margin: 10px;
+    width: 100%;
+    float: none;
+  }
+}
+
+
+/* CSS lainnya */
+
+
+
+    .pesan {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="file"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    form input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .paket-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.paket-list li {
+  margin-bottom: 10px;
+}
+
+.paket-list label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+  @media only screen and (max-width: 600px) {
+      .pesan {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      form label,
+    }
+
+
+/*Footer*/
+/* Footer */
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #336633;
+  z-index: 9999;
+}
+
+footer p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Responsif */
+@media only screen and (max-width: 480px) {
+  footer {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+  }
+  
+  footer p {
+    padding: 0;
+  }
+}
+

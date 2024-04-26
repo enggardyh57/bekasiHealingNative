@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook-Masuk/Daftar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+	padding: 110px;
+	margin: 0;
+	background-color : #f0f2f5;
+	font-family: inherit;
+	position: fixed;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.kotak-judul {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 500px;
+	align-content: center;
+}
+
+.kotak-judul h1 {
+	font-size: 60px;
+	color:#336633;
+	font-family: arial;
+	margin-bottom: -20px;
+}
+
+.kotak-judul p {
+	font-size: 26px;
+	color: black;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+
+.kotak-login {
+	width: 350px;
+	height: 350px;
+	padding: 15px;
+	text-align: center;
+	border-radius: 5px;
+	background-color:white;
+	margin-left: 60px;
+
+	box-shadow: 3px 3px 3px  3px rgb(204,204,204);
+}
+
+.kotak-login input {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 18px;
+	box-sizing: border-box;
+	border: 1px solid #6666;
+	border-radius: 5px;
+	outline: none;
+}
+
+.kotak-login input:hover {
+	box-shadow: 0 0 1px rgb(22,111,219);
+}
+
+.kotak-login button {
+	width: 350px;
+	height: 50px;
+	color: white;
+	font-size: 20px;
+	font-family: 600;
+	border-radius: 5px;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	padding: 13px 0;
+	cursor: pointer;
+	background-color: #336633;
+}
+
+.kotak-login button:hover {
+	background-color: grey;
+}
+
+.kotak-login form a {
+	
+	color: #3366CC;
+	font-size: 14px;
+	text-decoration: none;
+	margin-top: 5px;
+	margin-bottom: -20px;
+	display: block;
+
+}
+
+.kotak-login form a:hover {
+	text-decoration: underline;
+}
+
+ hr {
+	border: 1px solid #dadde1;
+	margin-bottom: 5px;
+}
+
+.kotak-login .create-btn a {
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 15px 20px;
+	border-radius: 5px;
+	background: #336633;
+	font-weight: 600;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
+.kotak-login .create-btn a:hover {
+	background-color: grey;
+}
+
+
+.kotak-login .halaman-baru {
+	color: black;
+	padding-top: 75px
+}
+
+.kotak-login .halaman-baru a {
+	text-decoration: none;
+	color: black;
+
+}
+
+.kotak-login .halaman-baru a:hover {
+	text-decoration: underline;
+}
+
+
+
+	</style>
+</head>
+<body> 
+<div class="box">
+	<div class="kotak-judul">
+		<h1>Beling</h1>
+		<p>Beling membantu anda untuk mencari tempat healing di Bandung.</p>
+	</div>
+
+	<div class="kotak-login">
+		<form action="index.html">
+			<input type="text" placeholder="Email atau No Telepon" required="">
+			<input type="password" placeholder="Password" required="">
+			<button type="submit">Masuk</button>
+			<a href="lupasandi.html" class="sandi">Lupa Kata Sandi?</a>
+		</form>
+		<br>
+		<br>
+		<hr>
+		<div class="create-btn">
+			<a href="akunbaru.html">Buat Akun Baru</a>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pemesanan Tiket</title>
+    <style type="text/css">
+    	body{
+    		font-family: Arial, sans-serif;
+    		background-color: #3636
+    	}
+        .container {
+            
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(204,204,204,0.5);
+      		border-radius: 7px;
+      		padding: 30px;
+      		margin: 50px auto;
+      		max-width: 400px;
+      		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+
+        input[type="submit"]:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logobeling.png" alt="Logo Perusahaan">
+        <h1>Pemesanan Tiket</h1>
+        <form action="outputpesan.php" method="POST" enctype="multipart/form-data">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="tgl_perjalanan">Tanggal Perjalanan:</label>
+            <input type="date" id="tgl_perjalanan" name="tgl_perjalanan" required>
+            
+            <label for="paket">Pilihan Paket:</label>
+            <select id="paket" name="paket" required>
+                <option value="Paket A Lembang">Paket A Lembang</option>
+                <option value="Paket B Lembang">Paket B Lembang</option>
+                <option value="Paket A Ciwidey">Paket A Ciwidey</option>
+                <option value="Paket B Ciwidey">Paket B Ciwidey</option>
+            </select>
+            
+            <label for="jumlah_tiket">Jumlah Tiket:</label>
+            <input type="number" id="jumlah_tiket" name="jumlah_tiket" required>
+            
+            <label for="no_telepon">No. Telepon:</label>
+            <input type="tel" id="no_telepon" name="no_telepon" pattern="[0-9]{10,12}" required>
+            
+            <h4>Jika pembelian diatas 4 tiket <br>akan mendapatkan diskon 20%</h4>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+</body>
+</html>

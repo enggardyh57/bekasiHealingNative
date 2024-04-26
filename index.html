@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Beling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Navigasi Awal -->
+	<div class="navigasi">
+  		<a href="index.html"><img src="img/logobeling.png"></a>
+  		<div class="hamburger">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	  </div>
+	  <ul>
+	    <li><a href="index.html">Beranda</a></li>
+	    <li><a href="info.html">Info</a></li>
+	    <li><a href="paket.html">Paket Healing</a></li>
+	    <li><a href="galeri.html">Galeri</a></li>
+	    <li><a href="https://wa.me/088291417540">Hubungi Kami</a></li>
+	  </ul>
+	  <a href="login.html" class="btn">Log Out</a>
+	</div>
+<!-- Navigasi Akhir -->
+
+
+	<!-- Beranda awal -->
+	<div class="box-home" id="beranda">
+		<h1>Bekasi Healing</h1>
+		<h3><i>"ayo tinggalkan bekasi panasmu itu, mari healing bersamaku"</i></h3>
+		<br>
+		<p>Bekasi Healing menyediakan paket trip tour Lembang dan Ciwidey Bandung</p>
+		<div>
+			<a href="https://wa.me/088291417540"><button type="button"><span></span>WhatsApp</button></a>
+		</div>
+	</div>
+	<!-- Beranda akhir -->
+
+	<!-- Footer awal -->
+	<footer>
+		<p>Copyright 2023 |by Bekasi Healing</p>
+	</footer>
+	<!-- Footer akhir -->
+
+	<script>
+  	const hamburger = document.querySelector('.hamburger');
+  	const navigasi = document.querySelector('.navigasi');
+
+  	hamburger.addEventListener('click', function() {
+    navigasi.classList.toggle('active');
+  	});
+	</script>
+
+</body>
+</html>
